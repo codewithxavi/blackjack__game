@@ -1,0 +1,71 @@
+:root {
+  --bg-title: hsl(43, 73%, 49%);
+  --message-El: hsl(0, 0%, 100%);
+  --color-p: hsl(0, 0%, 100%);
+  --bg-button: hsl(43, 74%, 49%);
+  --color-button: hsl(120, 100%, 27%);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../img/table.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  color: var(--bg-title);
+  font-size: 4rem;
+  font-weight: bold;
+  padding-top: 40px;
+}
+
+#message-el {
+  font-style: italic;
+  font-size: 2rem;
+
+  width: 75%;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 2rem;
+  color: var(--color-p);
+}
+
+button {
+  width: 300px;
+  background: var(--bg-button);
+  padding: 10px 0;
+  font-size: 1.5rem;
+  color: var(--color-button);
+  font-weight: bold;
+
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+
+}
+
+.blackjack {
+  width: 150px;
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.blackjack__invisible {
+  opacity: 0;
+  visibility: hidden;
+  transition: all .25s ease-in-out;
+}
